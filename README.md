@@ -63,3 +63,8 @@ DTO
 -----
 data transfer object
 working between POCO(object without behavior) object and Data Processing.
+
+DAO
+-----
+data access object  
+provide a series of data opreration
