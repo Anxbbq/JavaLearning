@@ -13,5 +13,9 @@ Java8 API
 -------
 [video](https://www.bilibili.com/video/BV1ut411g7E9) [doc](https://blog.csdn.net/weixin_45225595/article/details/106203264)(2019)
 
+IOC & DI
+---------
+[doc](https://blog.csdn.net/bestone0213/article/details/47424255)
+
 
 
