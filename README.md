@@ -26,26 +26,26 @@ IOC & DI
 @JmsListener(destination = "")  
 destination：消息被寻址、发送以及接收的对象  
 
-ObjectMapper
-    ```java
-    public void testObj() throws JsonGenerationException, JsonMappingException, IOException {
-        XwjUser user = new XwjUser(1, "Hello World", new Date());
+ObjectMapper  
+```java
+public void testObj() throws JsonGenerationException, JsonMappingException, IOException {
+    XwjUser user = new XwjUser(1, "Hello World", new Date());
 
-        mapper.writeValue(new File("D:/test.txt"), user); // 写到文件中
-        // mapper.writeValue(System.out, user); //写到控制台
+    mapper.writeValue(new File("D:/test.txt"), user); // 写到文件中
+    // mapper.writeValue(System.out, user); //写到控制台
 
-        String jsonStr = mapper.writeValueAsString(user);
-        System.out.println("对象转为字符串：" + jsonStr);
+    String jsonStr = mapper.writeValueAsString(user);
+    System.out.println("对象转为字符串：" + jsonStr);
 
-        byte[] byteArr = mapper.writeValueAsBytes(user);
-        System.out.println("对象转为byte数组：" + byteArr);
+    byte[] byteArr = mapper.writeValueAsBytes(user);
+    System.out.println("对象转为byte数组：" + byteArr);
 
-        XwjUser userDe = mapper.readValue(jsonStr, XwjUser.class);
-        System.out.println("json字符串转为对象：" + userDe);
+    XwjUser userDe = mapper.readValue(jsonStr, XwjUser.class);
+    System.out.println("json字符串转为对象：" + userDe);
 
-        XwjUser useDe2 = mapper.readValue(byteArr, XwjUser.class);
-        System.out.println("byte数组转为对象：" + useDe2);
-    }
-    ```
+    XwjUser useDe2 = mapper.readValue(byteArr, XwjUser.class);
+    System.out.println("byte数组转为对象：" + useDe2);
+}
+```
 
 
