@@ -59,4 +59,7 @@ public void testObj() throws JsonGenerationException, JsonMappingException, IOEx
 }
 ```
 
-
+DTO
+-----
+data transfer object
+working between POCO(object without behavior) object and Data Processing.
