@@ -26,7 +26,8 @@ IOC & DI
 @JmsListener(destination = "")  
 destination：消息被寻址、发送以及接收的对象  
 
-`ObjectMapper  
+ObjectMapper
+`
 public static ObjectMapper mapper = new ObjectMapper();
 static {
     // 转换为格式化的json
@@ -36,7 +37,7 @@ static {
     mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
 }
 
-@Test
+
     public void testObj() throws JsonGenerationException, JsonMappingException, IOException {
         XwjUser user = new XwjUser(1, "Hello World", new Date());
 
