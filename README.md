@@ -17,5 +17,7 @@ IOC & DI
 ---------
 [doc](https://blog.csdn.net/bestone0213/article/details/47424255)
 
-
+2021/7/21
+------
+@JsonProperty 此注解用于属性上，作用是把该属性的名称序列化为另外一个名称，如把trueName属性序列化为name，@JsonProperty("name")
 
