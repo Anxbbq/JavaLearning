@@ -27,7 +27,7 @@ IOC & DI
 destination：消息被寻址、发送以及接收的对象  
 
 ObjectMapper
-    `public void testObj() throws JsonGenerationException, JsonMappingException, IOException {
+    ```public void testObj() throws JsonGenerationException, JsonMappingException, IOException {
         XwjUser user = new XwjUser(1, "Hello World", new Date());
 
         mapper.writeValue(new File("D:/test.txt"), user); // 写到文件中
@@ -45,6 +45,6 @@ ObjectMapper
         XwjUser useDe2 = mapper.readValue(byteArr, XwjUser.class);
         System.out.println("byte数组转为对象：" + useDe2);
     }
-    `
+    ```
 
 
